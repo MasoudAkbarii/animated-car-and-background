@@ -1,0 +1,32 @@
+@import "../CSSreset/CSSRESET.css";
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img-gif/autumn-city-park-with-bench-and-2.png);
+  background-repeat: repeat-x;
+  background-size: auto 100%;     
+  background-position: 0 0;
+  position: relative;
+  overflow: hidden;             
+  animation: park 10s linear infinite;
+}
+
+@keyframes park{
+  from {
+    background-position-x:0px;
+  }
+  to {
+    background-position-x:-1000px;
+  }
+}
+
+.walking {
+  background-image: url(./img-gif/output-onlinegiftools.gif);
+  width: 40%;
+  height: 600px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
