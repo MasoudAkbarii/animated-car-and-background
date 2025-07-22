@@ -1,0 +1,42 @@
+@import"../CSSreset/CSSRESET.css";
+.main-bg{
+width: 100%;
+height: 100vh;
+background-image: url(./img-gif/SKY-2.png);
+background-position: center;
+background-size:cover;
+position: relative;
+overflow: hidden;
+}
+.road{
+    width: 500%;
+    height: 100px;
+    background-image: url(./img-gif/road.png);
+    position: absolute;
+    bottom:0;
+    right: 0;
+    left: 0;
+    animation: road 2s linear infinite;
+    display: block;
+    z-index: 1;
+}
+@keyframes road {
+    0%{transform: translateX(0px);}
+    100%{transform: translateX(-100px);}
+}
+.city{
+    width: 500%;
+    height: 192px;
+    background-image: url(./img-gif/468049-removebg-preview\ \(1\).png);
+    position: absolute;
+    bottom: 19px;
+    right: 0px;
+    left: 0px;
+    animation: city 1s linear infinite;
+    z-index: 1;
+    background-repeat: repeat-x;
+}
+@keyframes city{
+    0%{transform: translateX(0px);}
+    100%{transform: translateX(-100px);}
+}
