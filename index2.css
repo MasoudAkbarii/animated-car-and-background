@@ -29,9 +29,9 @@ overflow: hidden;
     height: 192px;
     background-image: url(./img-gif/468049-removebg-preview\ \(1\).png);
     position: absolute;
-    bottom: 19px;
-    right: 0px;
-    left: 0px;
+    bottom:19px;
+    right:0px;
+    left:0px;
     animation: city 1s linear infinite;
     z-index: 1;
     background-repeat: repeat-x;
@@ -39,4 +39,42 @@ overflow: hidden;
 @keyframes city{
     0%{transform: translateX(0px);}
     100%{transform: translateX(-100px);}
+}
+.car{
+ width: 400px;
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ bottom: 0;
+ z-index: 2;
+}
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+@keyframes car
+{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-3px);}
+    75%{transform: translateY(3px);}
+    100%{transform: translateY(0px);}
+}
+.wheels{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-32px);
+    z-index: 3;
+    bottom: 10px;
+   
+}
+@keyframes wheels{
+    100%{transform:rotate(360deg);}
+}
+.wheels img{
+    width: 85px;
+    animation: wheels 1s linear infinite;
+}
+.wheels .wheel-back{
+    position: relative;
+    right: 66%;
 }
